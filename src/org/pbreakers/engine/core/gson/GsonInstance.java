@@ -1,4 +1,4 @@
-package org.pbreakers.engine.core;
+package org.pbreakers.engine.core.gson;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

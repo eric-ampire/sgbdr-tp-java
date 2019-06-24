@@ -27,11 +27,11 @@ public class Attribut implements Comparable<Attribut> {
         return Objects.hash(nom, type, constraint);
     }
 
-    enum Type {
+    public enum Type {
         CHAINE, CAHACTERE, ENTIER
     }
 
-    enum Constraint {
+    public enum Constraint {
         UNIQUE, FOREIGN, PRIMARY
     }
 

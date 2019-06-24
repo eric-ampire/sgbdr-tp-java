@@ -5,15 +5,29 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.pbreakers.engine.core.DatabaseOperation;
+import org.pbreakers.engine.core.database.TableOperation;
+import org.pbreakers.engine.persistance.Attribut;
 import org.pbreakers.engine.persistance.Database;
+import org.pbreakers.engine.persistance.Table;
 
 public class Main extends Application {
     public static void main(String[] args) {
         Database db = new Database("main");
+        Table t1 = new Table("etudiant");
+        Table t2 = new Table("cour");
 
-        boolean resutl = DatabaseOperation.createDatabasee(db);
-        System.out.println(resutl);
+        Attribut a1 = new Attribut("nom", Attribut.Type.CHAINE, Attribut.Constraint.UNIQUE);
+        Attribut a2 = new Attribut("id", Attribut.Type.ENTIER, Attribut.Constraint.UNIQUE);
+
+        t1.addAttribut(a1);
+        t1.addAttribut(a2);
+
+        db.add(t1);
+        db.add(t2);
+
+        System.out.println(TableOperation.create(db.getDatabasePath(), t1));
+        System.out.println(TableOperation.create(db.getDatabasePath(), t2));
+        System.out.println(TableOperation.delete(db.getDatabasePath(), t1));
     }
 
     @Override

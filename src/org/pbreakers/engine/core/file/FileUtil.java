@@ -1,4 +1,4 @@
-package org.pbreakers.engine.core;
+package org.pbreakers.engine.core.file;
 
 import java.io.File;
 import java.io.FileReader;

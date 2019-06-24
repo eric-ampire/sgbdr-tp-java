@@ -5,9 +5,10 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class Database {
+    private String databasePath;
     private String nom;
     private Set<Table> tables = new TreeSet<>();
-    private String databasePath;
+
 
     public String getDatabasePath() {
         return databasePath;
