@@ -44,7 +44,12 @@ public class DatabaseOperation {
         }
     }
 
-    public static void  updateDatabasee(Database newDatabase, Database old) {
+    public static boolean updateDatabasee(String newName, String oldName) {
 
+        File newFile = new File("database/" + newName + ".json");
+        File oldFile = new File("database/" + oldName + ".json");
+
+
+        return oldFile.renameTo(newFile);
     }
 }

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/gson-2.3.1.jar" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Database creation">
       <change afterPath="$PROJECT_DIR$/out/production/database-java/org/pbreakers/engine/core/DatabaseOperation.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/database-java/org/pbreakers/engine/core/FileUtil.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/database-java/org/pbreakers/engine/core/GsonInstance.class" afterDir="false" />
@@ -14,14 +11,10 @@
       <change afterPath="$PROJECT_DIR$/out/production/database-java/org/pbreakers/engine/persistance/Attribut.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/database-java/org/pbreakers/engine/persistance/Database.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/database-java/org/pbreakers/engine/persistance/Table.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/pbreakers/engine/core/FileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/pbreakers/engine/core/TableOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/database-java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/database-java/org/pbreakers/engine/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/database-java/org/pbreakers/engine/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/pbreakers/engine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/pbreakers/engine/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/pbreakers/engine/core/DatabaseOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/pbreakers/engine/core/DatabaseOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/pbreakers/engine/core/GsonInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/pbreakers/engine/core/GsonInstance.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,11 +74,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/pbreakers/engine/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            <state relative-caret-position="238">
+              <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,7 +86,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/main.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -129,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/pbreakers/engine/core/DatabaseOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+            <state relative-caret-position="455">
+              <caret line="49" column="65" lean-forward="true" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -276,10 +269,10 @@
         <option value="$PROJECT_DIR$/src/org/pbreakers/engine/persistance/Table.java" />
         <option value="$PROJECT_DIR$/src/org/pbreakers/engine/core/TableOperation.java" />
         <option value="$PROJECT_DIR$/src/org/pbreakers/engine/core/FileUtil.java" />
-        <option value="$PROJECT_DIR$/src/org/pbreakers/engine/core/DatabaseOperation.java" />
         <option value="$PROJECT_DIR$/src/org/pbreakers/engine/core/GsonInstance.java" />
-        <option value="$PROJECT_DIR$/src/org/pbreakers/engine/Main.java" />
         <option value="$PROJECT_DIR$/database/main.json" />
+        <option value="$PROJECT_DIR$/src/org/pbreakers/engine/core/DatabaseOperation.java" />
+        <option value="$PROJECT_DIR$/src/org/pbreakers/engine/Main.java" />
       </list>
     </option>
   </component>
@@ -310,6 +303,24 @@
               <item name="database-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="database-java" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="database-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="database-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="database-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="database-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="database-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="database-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -441,7 +452,7 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1561358298494" duration="4451000" />
-      <workItem from="1561371685020" duration="5893000" />
+      <workItem from="1561371685020" duration="6347000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1561374513850</created>
@@ -450,17 +461,31 @@
       <option name="project" value="LOCAL" />
       <updated>1561374513850</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding json lib">
+      <created>1561377664286</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561377664286</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Database creation">
+      <created>1561377691818</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561377691818</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11646000" />
+    <option name="totallyTimeSpent" value="12100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21331316" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21331316" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -483,7 +508,7 @@
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3280255" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="16" visible="true" weight="0.32986626" />
+      <window_info anchor="bottom" id="Terminal" order="16" weight="0.32986626" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -501,10 +526,11 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Adding json lib" />
+    <MESSAGE value="Database creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database creation" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -638,16 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pbreakers/engine/core/DatabaseOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/pbreakers/engine/core/GsonInstance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -658,20 +674,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pbreakers/engine/Main.java">
+    <entry file="file://$PROJECT_DIR$/database/main.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="51">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/pbreakers/engine/core/DatabaseOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="49" column="65" lean-forward="true" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/main.json">
+    <entry file="file://$PROJECT_DIR$/src/org/pbreakers/engine/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="238">
+          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

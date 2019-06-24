@@ -12,7 +12,7 @@ public class Main extends Application {
     public static void main(String[] args) {
         Database db = new Database("main");
 
-        boolean resutl = DatabaseOperation.createDatabasee(db);
+        boolean resutl = DatabaseOperation.updateDatabasee("eric", db.getNom());
         System.out.println(resutl);
     }
 
