@@ -3,8 +3,6 @@ package org.pbreakers.engine.core;
 import org.pbreakers.engine.persistance.Database;
 
 import java.io.File;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class DatabaseOperation {
 
@@ -14,18 +12,36 @@ public class DatabaseOperation {
 
         File databaseFile = new File(filePath);
         if (databaseFile.exists()) {
+            new Exception("File exist").printStackTrace();
             return false;
         } else {
-            // dfdfdfdfd
-            return true;
+            try {
+                boolean fileIsCreated = databaseFile.createNewFile();
+
+                if (fileIsCreated) {
+                    String json = GsonInstance.getInstance().toJson(database);
+                    FileUtil.writeInFile(filePath, json);
+                }
+
+                return fileIsCreated;
+
+            } catch (Exception e) {
+                e.printStackTrace();
+                return false;
+            }
         }
     }
 
-    public static void  deleteDatabase(Database database) {
+    public static boolean deleteDatabase(Database database) {
         String fileName = database.getNom();
         String filePath = "database/" + fileName + ".json";
 
-
+        File databaseFile = new File(filePath);
+        if (databaseFile.exists()) {
+            return databaseFile.delete();
+        } else {
+            return false;
+        }
     }
 
     public static void  updateDatabasee(Database newDatabase, Database old) {

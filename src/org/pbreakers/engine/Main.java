@@ -5,10 +5,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.pbreakers.engine.core.DatabaseOperation;
+import org.pbreakers.engine.persistance.Database;
 
 public class Main extends Application {
     public static void main(String[] args) {
-        launch(args);
+        Database db = new Database("main");
+
+        boolean resutl = DatabaseOperation.createDatabasee(db);
+        System.out.println(resutl);
     }
 
     @Override
