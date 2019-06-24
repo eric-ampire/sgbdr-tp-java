@@ -7,6 +7,11 @@ import java.util.TreeSet;
 public class Database {
     private String nom;
     private Set<Table> tables = new TreeSet<>();
+    private String databasePath;
+
+    public String getDatabasePath() {
+        return databasePath;
+    }
 
     public String getNom() {
         return nom;
@@ -32,6 +37,7 @@ public class Database {
 
     public Database(String nom) {
         this.nom = nom;
+        databasePath = "database/" + getNom() + ".json";
     }
 
     public void add(Table table) {

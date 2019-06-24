@@ -7,10 +7,9 @@ import java.io.File;
 public class DatabaseOperation {
 
     public static boolean createDatabasee(Database database) {
-        String fileName = database.getNom();
-        String filePath = "database/" + fileName + ".json";
 
-        File databaseFile = new File(filePath);
+
+        File databaseFile = new File(database.getDatabasePath());
         if (databaseFile.exists()) {
             new Exception("File exist").printStackTrace();
             return false;
@@ -20,7 +19,7 @@ public class DatabaseOperation {
 
                 if (fileIsCreated) {
                     String json = GsonInstance.getInstance().toJson(database);
-                    FileUtil.writeInFile(filePath, json);
+                    FileUtil.writeInFile(database.getDatabasePath(), json);
                 }
 
                 return fileIsCreated;

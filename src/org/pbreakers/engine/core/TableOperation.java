@@ -7,7 +7,7 @@ import org.pbreakers.engine.persistance.Table;
 import java.io.File;
 
 public class TableOperation {
-    public static boolean create(Database database, Table table) {
+    public static boolean create(String databaseName, Table table) {
         // Get database from file
         // Add table to the database
         // Rewrite the file
