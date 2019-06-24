@@ -5,7 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.pbreakers.engine.core.database.TableOperation;
+import org.pbreakers.engine.core.operation.TableOperation;
 import org.pbreakers.engine.persistance.Attribut;
 import org.pbreakers.engine.persistance.Database;
 import org.pbreakers.engine.persistance.Table;

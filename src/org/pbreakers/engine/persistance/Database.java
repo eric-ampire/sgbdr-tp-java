@@ -38,7 +38,7 @@ public class Database {
 
     public Database(String nom) {
         this.nom = nom;
-        databasePath = "database/" + getNom() + ".json";
+        databasePath = "operation/" + getNom() + ".json";
     }
 
     public void add(Table table) {
